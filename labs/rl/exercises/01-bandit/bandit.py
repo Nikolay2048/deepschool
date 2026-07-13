@@ -25,9 +25,10 @@ class BanditEnv:
 
     def step(self, action: int) -> float:
         """Pull one arm and receive a noisy reward."""
-        # TODO: validate that action is in [0, self.k)
-        # TODO: return reward sampled around self.true_values[action]
-        raise NotImplementedError
+        if not 0 <= action < self.k:
+            raise ValueError(f"Action must be in [0, {self.k})")
+        true_mean = self.true_values[action]
+        return self.rng.gauss(true_mean, self.reward_std)
 
 
 class EpsilonGreedyAgent:
@@ -49,16 +50,21 @@ class EpsilonGreedyAgent:
 
     def choose_action(self) -> int:
         """Choose an action using epsilon-greedy strategy."""
-        # TODO: with probability epsilon, choose a random action
-        # TODO: otherwise choose an action with the highest q_value
-        raise NotImplementedError
+
+        if self.rng.random() < self.epsilon:
+            choice = self.rng.randrange(self.k)
+        else:
+            choice = self.q_values.index(max(self.q_values))
+
+        self.action_counts[choice] += 1
+        return choice
 
     def update(self, action: int, reward: float) -> None:
-        """Update estimated value for the selected action."""
-        # TODO: increment action count
-        # TODO: update q_values[action] using:
-        # Q_new = Q_old + (reward - Q_old) / N
-        raise NotImplementedError
+        """
+        Update estimated value for the selected action.
+        Q_new = Q_old + (reward - Q_old) / N
+        """
+        self.q_values[action] = self.q_values[action] + (reward - self.q_values[action]) / self.action_counts[action]
 
 
 def run_experiment(
@@ -73,11 +79,10 @@ def run_experiment(
     total_reward = 0.0
 
     for _ in range(steps):
-        # TODO: choose action
-        # TODO: call env.step(action)
-        # TODO: update agent
-        # TODO: add reward to total_reward
-        pass
+        action = agent.choose_action()
+        reward = env.step(action)
+        agent.update(action, reward)
+        total_reward += reward
 
     print("True action values:")
     print([round(value, 3) for value in env.true_values])
