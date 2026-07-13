@@ -1,5 +1,8 @@
+import re
+
 import torch
 import torch.nn as nn
+import unicodedata
 from torch.nn import functional as F
 
 # -------------------------
@@ -25,8 +28,69 @@ torch.manual_seed(42)
 # Data
 # -------------------------
 
+def _clean_text(text: str) -> str:
+    # Unicode-нормализация
+    text = unicodedata.normalize("NFKC", text)
+
+    # Неразрывные пробелы и похожие символы
+    text = text.replace("\xa0", " ")
+    text = text.replace("\ufeff", "")
+    text = text.replace("\u200b", "")
+
+    # Нормализуем переносы строк
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+
+    lines = text.split("\n")
+    cleaned_lines = []
+
+    for line in lines:
+        line = line.strip()
+
+        # Убираем пустые строки
+        if not line:
+            continue
+
+        # Убираем строки, состоящие только из числа: 953, 954 и т.п.
+        if re.fullmatch(r"\d+", line):
+            continue
+
+        # Убираем строки вида ")"
+        if re.fullmatch(r"[()\[\]{}]+", line):
+            continue
+
+        # Убираем строки из одних знаков препинания
+        if re.fullmatch(r"[^\wа-яА-ЯёЁ]+", line):
+            continue
+
+        # Убираем строки, где почти нет букв
+        letters = re.findall(r"[A-Za-zА-Яа-яЁё]", line)
+        if len(letters) < 2:
+            continue
+
+        # Схлопываем пробелы внутри строки
+        line = re.sub(r"\s+", " ", line)
+
+        cleaned_lines.append(line)
+
+    text = "\n".join(cleaned_lines)
+
+    # Убираем многократные пустые строки, если они всё же появились
+    text = re.sub(r"\n{3,}", "\n\n", text)
+
+    # Убираем пробелы перед знаками препинания
+    text = re.sub(r"\s+([,.;:!?])", r"\1", text)
+
+    # Нормализуем тире
+    text = text.replace("—", " — ")
+
+    # Ещё раз схлопываем лишние пробелы
+    text = re.sub(r"[ \t]+", " ", text)
+
+    return text.strip()
+
 with open("war_and_peace.ru.txt", "r", encoding="utf-8") as f:
     text = f.read()
+    text = _clean_text(text)
 
 chars = sorted(list(set(text)))
 vocab_size = len(chars)
