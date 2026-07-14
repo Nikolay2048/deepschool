@@ -1,27 +1,12 @@
 """Compare epsilon values for the multi-armed bandit exercise.
 
 Run:
-    python labs/rl/exercises/02-epsilon-comparison/compare_epsilon.py
+    python labs/rl/exercises/bandit/compare_epsilon.py
 """
 
 from __future__ import annotations
 
-import importlib.util
-from pathlib import Path
-
-
-def load_bandit_module():
-    """Load bandit.py from exercise 01 despite the folder name."""
-    current_dir = Path(__file__).resolve().parent
-    bandit_path = current_dir.parent / "01-bandit" / "bandit.py"
-
-    spec = importlib.util.spec_from_file_location("bandit", bandit_path)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"Cannot load module from {bandit_path}")
-
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
+from bandit import BanditEnv, EpsilonGreedyAgent
 
 
 def run_single_experiment(
@@ -30,10 +15,8 @@ def run_single_experiment(
     steps: int = 1000,
     seed: int = 42,
 ) -> dict[str, float | int]:
-    bandit = load_bandit_module()
-
-    env = bandit.BanditEnv(k=k, seed=seed)
-    agent = bandit.EpsilonGreedyAgent(k=k, epsilon=epsilon, seed=seed + 1)
+    env = BanditEnv(k=k, seed=seed)
+    agent = EpsilonGreedyAgent(k=k, epsilon=epsilon, seed=seed + 1)
 
     total_reward = 0.0
     best_action = env.true_values.index(max(env.true_values))
@@ -85,4 +68,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

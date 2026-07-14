@@ -1,7 +1,7 @@
 """First RL exercise: multi-armed bandit with epsilon-greedy agent.
 
 Run:
-    python labs/rl/exercises/01-bandit/bandit.py
+    python labs/rl/exercises/bandit/bandit.py
 """
 
 from __future__ import annotations
@@ -98,4 +98,4 @@ def run_experiment(
 
 
 if __name__ == "__main__":
-    run_experiment(epsilon=0.5)
+    run_experiment()
