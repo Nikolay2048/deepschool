@@ -17,6 +17,7 @@ state -> action -> reward -> next_state
 ## Файлы
 
 - `gridworld.py` - простая среда GridWorld.
+- `random_policy.py` - baseline без обучения: агент выбирает случайные действия.
 
 ## Что нужно сделать
 
@@ -32,6 +33,7 @@ state -> action -> reward -> next_state
 
 ```powershell
 python labs/rl/exercises/gridworld/gridworld.py
+python labs/rl/exercises/gridworld/random_policy.py
 ```
 
 ## Ожидаемая идея
@@ -46,3 +48,4 @@ python labs/rl/exercises/gridworld/gridworld.py
 - `next_state`;
 - `done`.
 
+Следующий шаг - измерить random policy baseline: как часто случайный агент доходит до цели и какую среднюю награду получает.

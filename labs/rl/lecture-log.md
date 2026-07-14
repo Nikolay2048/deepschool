@@ -9,11 +9,12 @@
 | 03 | Новая | `lectures/03-multiple-runs.md` | `exercises/bandit/multiple_runs.py` | independent runs, seed, mean, standard deviation, stability |
 | 04 | Новая | `lectures/04-learning-curves.md` | `exercises/bandit/learning_curves.py` | cumulative average reward, learning curve, noisy reward, visualization |
 | 05 | Новая | `lectures/05-gridworld-and-mdp.md` | `exercises/gridworld/gridworld.py` | GridWorld, MDP, state, transition, terminal state |
+| 06 | Новая | `lectures/06-random-policy-baseline.md` | `exercises/gridworld/random_policy.py` | random policy, baseline, success rate, episode length |
 
 ## Следующее
 
-После GridWorld environment:
+После random policy baseline:
 
-1. Проверить ручные переходы среды.
-2. Добавить random policy baseline.
-3. Перейти к value function и Q-table.
+1. Перейти к value function.
+2. Добавить Q-table.
+3. Подготовить Q-learning для GridWorld.
