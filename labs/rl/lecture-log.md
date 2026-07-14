@@ -8,11 +8,12 @@
 | 02 | В процессе | `lectures/02-exploration-vs-exploitation.md` | `exercises/bandit/compare_epsilon.py` | epsilon-greedy, exploration, exploitation, total reward, average reward, best action rate, learning curve |
 | 03 | Новая | `lectures/03-multiple-runs.md` | `exercises/bandit/multiple_runs.py` | independent runs, seed, mean, standard deviation, stability |
 | 04 | Новая | `lectures/04-learning-curves.md` | `exercises/bandit/learning_curves.py` | cumulative average reward, learning curve, noisy reward, visualization |
+| 05 | Новая | `lectures/05-gridworld-and-mdp.md` | `exercises/gridworld/gridworld.py` | GridWorld, MDP, state, transition, terminal state |
 
 ## Следующее
 
-После bandit learning curves:
+После GridWorld environment:
 
-1. Сделать первый визуальный "вау" на bandit learning curves.
-2. Перейти к GridWorld.
-3. Разобрать MDP: state, transition, value function.
+1. Проверить ручные переходы среды.
+2. Добавить random policy baseline.
+3. Перейти к value function и Q-table.
