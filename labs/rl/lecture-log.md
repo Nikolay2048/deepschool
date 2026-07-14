@@ -5,13 +5,12 @@
 | # | Статус | Материал | Практика | Ключевые идеи |
 |---|--------|----------|----------|---------------|
 | 01 | В процессе | `lectures/01-intro.md` | `exercises/01-bandit/` | agent, environment, action, reward, policy, exploration vs exploitation, multi-armed bandit |
+| 02 | Новая | `lectures/02-exploration-vs-exploitation.md` | `exercises/02-epsilon-comparison/` | epsilon-greedy, exploration, exploitation, total reward, average reward, best action rate, learning curve |
 
 ## Следующее
 
-После проверки `01-bandit`:
+После `02-epsilon-comparison`:
 
-1. Разобрать результаты epsilon-greedy.
-2. Сравнить разные значения `epsilon`.
-3. Добавить график средней награды.
-4. Перейти к MDP: state, transition, value function.
-
+1. Добавить несколько независимых запусков на каждый `epsilon`.
+2. Добавить график средней награды.
+3. Перейти к MDP: state, transition, value function.
