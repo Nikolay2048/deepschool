@@ -7,11 +7,12 @@
 | 01 | В процессе | `lectures/01-intro.md` | `exercises/bandit/bandit.py` | agent, environment, action, reward, policy, exploration vs exploitation, multi-armed bandit |
 | 02 | В процессе | `lectures/02-exploration-vs-exploitation.md` | `exercises/bandit/compare_epsilon.py` | epsilon-greedy, exploration, exploitation, total reward, average reward, best action rate, learning curve |
 | 03 | Новая | `lectures/03-multiple-runs.md` | `exercises/bandit/multiple_runs.py` | independent runs, seed, mean, standard deviation, stability |
+| 04 | Новая | `lectures/04-learning-curves.md` | `exercises/bandit/learning_curves.py` | cumulative average reward, learning curve, noisy reward, visualization |
 
 ## Следующее
 
-После bandit multiple runs:
+После bandit learning curves:
 
-1. Добавить график средней награды.
-2. Сделать первый визуальный "вау" на bandit learning curves.
-3. Перейти к MDP: state, transition, value function.
+1. Сделать первый визуальный "вау" на bandit learning curves.
+2. Перейти к GridWorld.
+3. Разобрать MDP: state, transition, value function.
