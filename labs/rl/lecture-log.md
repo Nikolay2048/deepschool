@@ -13,11 +13,12 @@
 | 07 | Новая | `lectures/07-q-learning.md` | `exercises/gridworld/q_learning.py` | Q-table, Q-learning, alpha, gamma, greedy policy |
 | 08 | Новая | `lectures/08-evaluating-policy.md` | `exercises/gridworld/evaluate_q_learning.py` | training vs evaluation, learned policy, policy comparison |
 | 09 | Новая | `lectures/09-gridworld-training-curve.md` | `exercises/gridworld/training_curve.py` | training curve, rolling average, reward, success rate |
+| 10 | Новая | `lectures/10-value-heatmap.md` | `exercises/gridworld/value_heatmap.py` | value function, V(state), heatmap, policy arrows |
 
 ## Следующее
 
-После GridWorld training curve:
+После value heatmap:
 
-1. Визуализировать value function.
-2. Перейти к exploration decay.
+1. Перейти к exploration decay.
+2. Сделать stochastic GridWorld.
 3. Подготовить переход к Gymnasium/FrozenLake.
