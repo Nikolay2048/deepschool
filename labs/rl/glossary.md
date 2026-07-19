@@ -46,3 +46,5 @@
 | `training` | Режим, где агент собирает опыт и обновляет свои параметры или Q-values. | Во время training обычно включен exploration. |
 | `evaluation` | Режим проверки уже обученной политики. | Обычно exploration выключают и используют greedy policy. |
 | `learned policy` | Политика, полученная после обучения. | В Q-learning это greedy policy по выученной Q-table. |
+| `training curve` | График метрик во время обучения. | Показывает, как reward, success rate или длина эпизода меняются по episodes. |
+| `rolling average` | Скользящее среднее по последним значениям. | Сглаживает шумные RL-метрики, например среднее последних 20 episodes. |

@@ -12,11 +12,12 @@
 | 06 | Новая | `lectures/06-random-policy-baseline.md` | `exercises/gridworld/random_policy.py` | random policy, baseline, success rate, episode length |
 | 07 | Новая | `lectures/07-q-learning.md` | `exercises/gridworld/q_learning.py` | Q-table, Q-learning, alpha, gamma, greedy policy |
 | 08 | Новая | `lectures/08-evaluating-policy.md` | `exercises/gridworld/evaluate_q_learning.py` | training vs evaluation, learned policy, policy comparison |
+| 09 | Новая | `lectures/09-gridworld-training-curve.md` | `exercises/gridworld/training_curve.py` | training curve, rolling average, reward, success rate |
 
 ## Следующее
 
-После policy evaluation:
+После GridWorld training curve:
 
-1. Добавить training curve для GridWorld.
-2. Визуализировать value function.
-3. Перейти к exploration decay.
+1. Визуализировать value function.
+2. Перейти к exploration decay.
+3. Подготовить переход к Gymnasium/FrozenLake.
