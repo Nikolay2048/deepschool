@@ -22,7 +22,6 @@ def run_episode(
     total_reward = 0.0
 
     for step_idx in range(1, max_steps + 1):
-        # TODO: choose random action from ACTIONS
         action = rng.choice(ACTIONS)
         result = env.step(action)
         total_reward += result.reward

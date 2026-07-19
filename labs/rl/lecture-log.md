@@ -10,11 +10,12 @@
 | 04 | Новая | `lectures/04-learning-curves.md` | `exercises/bandit/learning_curves.py` | cumulative average reward, learning curve, noisy reward, visualization |
 | 05 | Новая | `lectures/05-gridworld-and-mdp.md` | `exercises/gridworld/gridworld.py` | GridWorld, MDP, state, transition, terminal state |
 | 06 | Новая | `lectures/06-random-policy-baseline.md` | `exercises/gridworld/random_policy.py` | random policy, baseline, success rate, episode length |
+| 07 | Новая | `lectures/07-q-learning.md` | `exercises/gridworld/q_learning.py` | Q-table, Q-learning, alpha, gamma, greedy policy |
 
 ## Следующее
 
-После random policy baseline:
+После Q-learning:
 
-1. Перейти к value function.
-2. Добавить Q-table.
-3. Подготовить Q-learning для GridWorld.
+1. Сравнить learned policy с random policy.
+2. Добавить training curve для GridWorld.
+3. Визуализировать value function.
