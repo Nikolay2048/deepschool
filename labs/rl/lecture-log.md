@@ -11,11 +11,12 @@
 | 05 | Новая | `lectures/05-gridworld-and-mdp.md` | `exercises/gridworld/gridworld.py` | GridWorld, MDP, state, transition, terminal state |
 | 06 | Новая | `lectures/06-random-policy-baseline.md` | `exercises/gridworld/random_policy.py` | random policy, baseline, success rate, episode length |
 | 07 | Новая | `lectures/07-q-learning.md` | `exercises/gridworld/q_learning.py` | Q-table, Q-learning, alpha, gamma, greedy policy |
+| 08 | Новая | `lectures/08-evaluating-policy.md` | `exercises/gridworld/evaluate_q_learning.py` | training vs evaluation, learned policy, policy comparison |
 
 ## Следующее
 
-После Q-learning:
+После policy evaluation:
 
-1. Сравнить learned policy с random policy.
-2. Добавить training curve для GridWorld.
-3. Визуализировать value function.
+1. Добавить training curve для GridWorld.
+2. Визуализировать value function.
+3. Перейти к exploration decay.

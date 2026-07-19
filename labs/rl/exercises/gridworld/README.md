@@ -19,6 +19,7 @@ state -> action -> reward -> next_state
 - `gridworld.py` - простая среда GridWorld.
 - `random_policy.py` - baseline без обучения: агент выбирает случайные действия.
 - `q_learning.py` - табличный Q-learning агент для GridWorld.
+- `evaluate_q_learning.py` - сравнение random policy и learned greedy policy.
 
 ## Что нужно сделать
 
@@ -36,6 +37,7 @@ state -> action -> reward -> next_state
 python labs/rl/exercises/gridworld/gridworld.py
 python labs/rl/exercises/gridworld/random_policy.py
 python labs/rl/exercises/gridworld/q_learning.py
+python labs/rl/exercises/gridworld/evaluate_q_learning.py
 ```
 
 ## Ожидаемая идея
@@ -53,3 +55,5 @@ python labs/rl/exercises/gridworld/q_learning.py
 Следующий шаг - измерить random policy baseline: как часто случайный агент доходит до цели и какую среднюю награду получает.
 
 После baseline переходим к Q-learning: агент будет учиться выбирать действия по Q-table.
+
+После Q-learning сравниваем обученную greedy policy с random policy по тем же метрикам.
