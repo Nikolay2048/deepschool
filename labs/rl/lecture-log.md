@@ -15,11 +15,12 @@
 | 09 | Новая | `lectures/09-gridworld-training-curve.md` | `exercises/gridworld/training_curve.py` | training curve, rolling average, reward, success rate |
 | 10 | Новая | `lectures/10-value-heatmap.md` | `exercises/gridworld/value_heatmap.py` | value function, V(state), heatmap, policy arrows |
 | 11 | Новая | `lectures/11-exploration-decay.md` | `exercises/gridworld/exploration_decay.py` | exploration decay, epsilon schedule, constant vs decaying epsilon |
+| 12 | Новая | `lectures/12-stochastic-gridworld.md` | `exercises/gridworld/stochastic_gridworld.py` | stochastic transition, slip probability, intended vs actual action |
 
 ## Следующее
 
-После exploration decay:
+После stochastic GridWorld:
 
-1. Сделать stochastic GridWorld.
-2. Сравнить deterministic и stochastic среды.
+1. Сравнить SARSA и Q-learning.
+2. Разобрать on-policy и off-policy.
 3. Подготовить переход к Gymnasium/FrozenLake.

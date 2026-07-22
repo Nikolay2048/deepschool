@@ -53,3 +53,7 @@
 | `heatmap` | Цветовая карта значений. | В GridWorld показывает value каждой клетки после обучения. |
 | `exploration decay` | Постепенное уменьшение `epsilon` во время обучения. | В начале агент больше исследует, ближе к концу больше использует learned policy. |
 | `epsilon schedule` | Правило, по которому `epsilon` меняется по episodes. | Например constant epsilon или linear decay от `1.0` до `0.05`. |
+| `stochastic transition` | Переход, где одно и то же действие может привести к разным результатам. | Например агент выбирает `up`, но среда иногда выполняет случайное действие. |
+| `slip probability` | Вероятность, что intended action будет заменен случайным actual action. | В stochastic GridWorld моделирует шумную среду. |
+| `intended action` | Действие, которое выбрал агент. | То, что агент хотел сделать. |
+| `actual action` | Действие, которое реально выполнила среда. | В stochastic среде может отличаться от intended action. |

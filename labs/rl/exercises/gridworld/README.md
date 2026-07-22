@@ -23,6 +23,7 @@ state -> action -> reward -> next_state
 - `training_curve.py` - графики процесса обучения Q-learning по эпизодам.
 - `value_heatmap.py` - визуализация `V(state) = max_a Q(state, action)`.
 - `exploration_decay.py` - сравнение постоянного и убывающего `epsilon`.
+- `stochastic_gridworld.py` - GridWorld со случайным slip в действиях.
 
 ## Что нужно сделать
 
@@ -44,6 +45,7 @@ python labs/rl/exercises/gridworld/evaluate_q_learning.py
 python labs/rl/exercises/gridworld/training_curve.py
 python labs/rl/exercises/gridworld/value_heatmap.py
 python labs/rl/exercises/gridworld/exploration_decay.py
+python labs/rl/exercises/gridworld/stochastic_gridworld.py
 ```
 
 ## Ожидаемая идея
@@ -69,3 +71,5 @@ Training curve показывает, как reward, success rate и длина �
 Value heatmap показывает, какие состояния агент считает более ценными после обучения.
 
 Exploration decay показывает, как меняется обучение, если постепенно уменьшать `epsilon`.
+
+Stochastic GridWorld показывает, что меняется, когда среда иногда выполняет не то действие, которое выбрал агент.
