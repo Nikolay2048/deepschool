@@ -22,6 +22,7 @@ state -> action -> reward -> next_state
 - `evaluate_q_learning.py` - сравнение random policy и learned greedy policy.
 - `training_curve.py` - графики процесса обучения Q-learning по эпизодам.
 - `value_heatmap.py` - визуализация `V(state) = max_a Q(state, action)`.
+- `exploration_decay.py` - сравнение постоянного и убывающего `epsilon`.
 
 ## Что нужно сделать
 
@@ -42,6 +43,7 @@ python labs/rl/exercises/gridworld/q_learning.py
 python labs/rl/exercises/gridworld/evaluate_q_learning.py
 python labs/rl/exercises/gridworld/training_curve.py
 python labs/rl/exercises/gridworld/value_heatmap.py
+python labs/rl/exercises/gridworld/exploration_decay.py
 ```
 
 ## Ожидаемая идея
@@ -65,3 +67,5 @@ python labs/rl/exercises/gridworld/value_heatmap.py
 Training curve показывает, как reward, success rate и длина эпизода менялись во время обучения.
 
 Value heatmap показывает, какие состояния агент считает более ценными после обучения.
+
+Exploration decay показывает, как меняется обучение, если постепенно уменьшать `epsilon`.

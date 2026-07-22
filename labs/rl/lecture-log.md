@@ -14,11 +14,12 @@
 | 08 | Новая | `lectures/08-evaluating-policy.md` | `exercises/gridworld/evaluate_q_learning.py` | training vs evaluation, learned policy, policy comparison |
 | 09 | Новая | `lectures/09-gridworld-training-curve.md` | `exercises/gridworld/training_curve.py` | training curve, rolling average, reward, success rate |
 | 10 | Новая | `lectures/10-value-heatmap.md` | `exercises/gridworld/value_heatmap.py` | value function, V(state), heatmap, policy arrows |
+| 11 | Новая | `lectures/11-exploration-decay.md` | `exercises/gridworld/exploration_decay.py` | exploration decay, epsilon schedule, constant vs decaying epsilon |
 
 ## Следующее
 
-После value heatmap:
+После exploration decay:
 
-1. Перейти к exploration decay.
-2. Сделать stochastic GridWorld.
+1. Сделать stochastic GridWorld.
+2. Сравнить deterministic и stochastic среды.
 3. Подготовить переход к Gymnasium/FrozenLake.
