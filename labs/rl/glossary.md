@@ -57,3 +57,6 @@
 | `slip probability` | Вероятность, что intended action будет заменен случайным actual action. | В stochastic GridWorld моделирует шумную среду. |
 | `intended action` | Действие, которое выбрал агент. | То, что агент хотел сделать. |
 | `actual action` | Действие, которое реально выполнила среда. | В stochastic среде может отличаться от intended action. |
+| `SARSA` | On-policy TD-алгоритм, который обновляет Q по цепочке state, action, reward, next_state, next_action. | Target использует `Q(next_state, next_action)`. |
+| `on-policy` | Алгоритм учит ту же policy, которой реально действует. | SARSA учитывает exploration текущей policy. |
+| `off-policy` | Алгоритм может действовать одной policy, а учить другую. | Q-learning действует epsilon-greedy, но учит greedy policy. |

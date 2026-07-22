@@ -16,11 +16,12 @@
 | 10 | Новая | `lectures/10-value-heatmap.md` | `exercises/gridworld/value_heatmap.py` | value function, V(state), heatmap, policy arrows |
 | 11 | Новая | `lectures/11-exploration-decay.md` | `exercises/gridworld/exploration_decay.py` | exploration decay, epsilon schedule, constant vs decaying epsilon |
 | 12 | Новая | `lectures/12-stochastic-gridworld.md` | `exercises/gridworld/stochastic_gridworld.py` | stochastic transition, slip probability, intended vs actual action |
+| 13 | Новая | `lectures/13-sarsa-vs-q-learning.md` | `exercises/gridworld/sarsa.py` | SARSA, Q-learning, on-policy, off-policy |
 
 ## Следующее
 
-После stochastic GridWorld:
+После SARSA vs Q-learning:
 
-1. Сравнить SARSA и Q-learning.
-2. Разобрать on-policy и off-policy.
-3. Подготовить переход к Gymnasium/FrozenLake.
+1. Подвести итог tabular RL.
+2. Подготовить переход к Gymnasium/FrozenLake.
+3. Начать работу со стандартными RL-средами.

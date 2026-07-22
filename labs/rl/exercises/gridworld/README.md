@@ -24,6 +24,7 @@ state -> action -> reward -> next_state
 - `value_heatmap.py` - визуализация `V(state) = max_a Q(state, action)`.
 - `exploration_decay.py` - сравнение постоянного и убывающего `epsilon`.
 - `stochastic_gridworld.py` - GridWorld со случайным slip в действиях.
+- `sarsa.py` - сравнение SARSA и Q-learning.
 
 ## Что нужно сделать
 
@@ -46,6 +47,7 @@ python labs/rl/exercises/gridworld/training_curve.py
 python labs/rl/exercises/gridworld/value_heatmap.py
 python labs/rl/exercises/gridworld/exploration_decay.py
 python labs/rl/exercises/gridworld/stochastic_gridworld.py
+python labs/rl/exercises/gridworld/sarsa.py
 ```
 
 ## Ожидаемая идея
@@ -73,3 +75,5 @@ Value heatmap показывает, какие состояния агент с�
 Exploration decay показывает, как меняется обучение, если постепенно уменьшать `epsilon`.
 
 Stochastic GridWorld показывает, что меняется, когда среда иногда выполняет не то действие, которое выбрал агент.
+
+SARSA показывает разницу между on-policy и off-policy обучением.
