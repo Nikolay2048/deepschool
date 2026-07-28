@@ -18,7 +18,7 @@
 |---:|---|---|
 | 00 | [Карта подготовки и прогресс](00-roadmap.md) | В процессе |
 | 01 | [Вычислительный граф, chain rule и backpropagation](01-backpropagation.md) | Изучается |
-| 02 | PyTorch: tensors, autograd и training loop | Запланировано |
+| 02 | [PyTorch: autograd и training loop](02-pytorch-autograd.md) | Изучается |
 | 03 | Оптимизация: SGD, momentum, Adam и learning rate | Запланировано |
 | 04 | Линейная алгебра для Deep Learning | Запланировано |
 | 05 | Функции активации, инициализация и градиенты | Запланировано |
