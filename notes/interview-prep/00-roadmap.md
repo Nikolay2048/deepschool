@@ -34,7 +34,7 @@
 - [x] Chain rule для последовательного вычислительного графа.
 - [x] Autograd и накопление градиентов в PyTorch.
 - [x] Линейная регрессия на PyTorch без `nn.Linear`.
-- [ ] `nn.Module`, `Dataset`, `DataLoader` и training loop.
+- [ ] `nn.Module`, `Dataset`, `DataLoader` и training loop. (`nn.Module` и optimizer изучены; `Dataset`/`DataLoader` впереди.)
 - [ ] Активации, инициализация и нормализация.
 - [ ] MLP и CNN.
 - [ ] Attention и Transformer.
