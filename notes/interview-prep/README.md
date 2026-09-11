@@ -24,9 +24,10 @@
 | 05 | Функции активации, инициализация и градиенты | Запланировано |
 | 06 | Loss-функции и вероятностная интерпретация | Запланировано |
 | 07 | Валидация, метрики и data leakage | Запланировано |
-| 08 | [Self-attention: подробная лекция](08-self-attention.md) | Одна голова реализована и разобрана; далее causal mask |
+| 08 | [Self-attention: подробная лекция](08-self-attention.md) | Одна голова реализована и разобрана |
 | 08b | [Causal mask и предсказание следующего токена](08b-causal-mask.md) | Реализовано; проверка причинности прошла |
 | 08c | [Attention как nn.Module](08c-attention-module.md) | Практика завершена; проверки прошли по сохранённым outputs |
+| 08d | [Multi-head attention](08d-multi-head-attention.md) | Практика завершена; далее векторизация |
 | 09 | Embeddings, retrieval и reranking | Запланировано |
 | 10 | RAG evaluation | Запланировано |
 | 11 | LLM agents и детерминированные workflows | Запланировано |
