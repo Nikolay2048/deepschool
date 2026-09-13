@@ -12,6 +12,8 @@
 | 04 | [Causal mask](04-causal-mask.ipynb) | Практика выполнена, ответы разобраны |
 | 04b | [Attention как nn.Module](04b-attention-module.ipynb) | Выполнено: эталон, причинность, градиенты, SGD и state_dict проверены |
 | 05 | [Multi-head attention: отдельные головы](05-multi-head-attention.ipynb) | Выполнено: формы, причинность и градиенты проверены; ответы разобраны |
+| 05b | [Оси голов: reshape и transpose](05b-head-axes.ipynb) | Выполнено: группировка и обратная сборка проверены |
+| 05c | [Векторизованный attention](05c-vectorized-attention.ipynb) | Выполнено: Q/K/V, forward, причинность и градиенты совпали с эталоном |
 | 06 | Transformer block | Запланировано |
 | 07 | Tiny decoder-only language model | Запланировано |
 

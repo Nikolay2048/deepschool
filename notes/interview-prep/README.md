@@ -28,6 +28,8 @@
 | 08b | [Causal mask и предсказание следующего токена](08b-causal-mask.md) | Реализовано; проверка причинности прошла |
 | 08c | [Attention как nn.Module](08c-attention-module.md) | Практика завершена; проверки прошли по сохранённым outputs |
 | 08d | [Multi-head attention](08d-multi-head-attention.md) | Практика завершена; далее векторизация |
+| 08e | [Оси голов: reshape и transpose](08e-head-axes.md) | Практика завершена |
+| 08f | [Векторизованный attention](08f-vectorized-attention.md) | Практика завершена; результаты и градиенты проверены |
 | 09 | Embeddings, retrieval и reranking | Запланировано |
 | 10 | RAG evaluation | Запланировано |
 | 11 | LLM agents и детерминированные workflows | Запланировано |
