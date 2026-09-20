@@ -31,6 +31,7 @@
 | 08e | [Оси голов: reshape и transpose](08e-head-axes.md) | Практика завершена |
 | 08f | [Векторизованный attention](08f-vectorized-attention.md) | Практика завершена; результаты и градиенты проверены |
 | 08g | [Residual connections](08g-residual-connections.md) | Практика завершена; градиенты по весам и входу разобраны |
+| 08h | [LayerNorm](08h-layernorm.md) | Практика завершена; статистики, оси и обучаемые параметры разобраны |
 | 09 | Embeddings, retrieval и reranking | Запланировано |
 | 10 | RAG evaluation | Запланировано |
 | 11 | LLM agents и детерминированные workflows | Запланировано |
