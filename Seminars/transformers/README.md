@@ -16,7 +16,8 @@
 | 05c | [Векторизованный attention](05c-vectorized-attention.ipynb) | Выполнено: Q/K/V, forward, причинность и градиенты совпали с эталоном |
 | 06 | [Residual connections](06-residual-connections.ipynb) — первый шаг к Transformer-блоку | Выполнено: A/B/C, градиенты по весам и входу разобраны |
 | 06b | [LayerNorm](06b-layernorm.ipynb) | Выполнено: A/B/C; код и сохранённые результаты просмотрены, ответы разобраны |
-| 06c | MLP и сборка Transformer-блока | Запланировано |
+| 06c | [MLP: преобразование признаков токена](06c-token-mlp.ipynb) | Выполнено: A/B; код, ответы и сохранённые результаты разобраны без запуска |
+| 06d | Сборка pre-norm Transformer-блока | Следующий шаг |
 | 07 | Tiny decoder-only language model | Запланировано |
 
 Фундамент PyTorch и математики повторяется по мере необходимости внутри занятий.
