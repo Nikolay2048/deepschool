@@ -33,6 +33,7 @@
 | 08g | [Residual connections](08g-residual-connections.md) | Практика завершена; градиенты по весам и входу разобраны |
 | 08h | [LayerNorm](08h-layernorm.md) | Практика завершена; статистики, оси и обучаемые параметры разобраны |
 | 08i | [MLP в Transformer](08i-token-mlp.md) | Практика завершена; формы, параметры и независимость позиций разобраны |
+| 08j | [Pre-norm Transformer-блок](08j-transformer-block.md) | Практика завершена; residual-ветви и причинность разобраны |
 | 09 | Embeddings, retrieval и reranking | Запланировано |
 | 10 | RAG evaluation | Запланировано |
 | 11 | LLM agents и детерминированные workflows | Запланировано |
