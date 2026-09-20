@@ -14,7 +14,8 @@
 | 05 | [Multi-head attention: отдельные головы](05-multi-head-attention.ipynb) | Выполнено: формы, причинность и градиенты проверены; ответы разобраны |
 | 05b | [Оси голов: reshape и transpose](05b-head-axes.ipynb) | Выполнено: группировка и обратная сборка проверены |
 | 05c | [Векторизованный attention](05c-vectorized-attention.ipynb) | Выполнено: Q/K/V, forward, причинность и градиенты совпали с эталоном |
-| 06 | Transformer block | Запланировано |
+| 06 | [Residual connections](06-residual-connections.ipynb) — первый шаг к Transformer-блоку | Выполнено: A/B/C, градиенты по весам и входу разобраны |
+| 06b–06c | LayerNorm, MLP и сборка Transformer-блока | Запланировано |
 | 07 | Tiny decoder-only language model | Запланировано |
 
 Фундамент PyTorch и математики повторяется по мере необходимости внутри занятий.
