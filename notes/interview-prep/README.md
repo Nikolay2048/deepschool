@@ -35,6 +35,7 @@
 | 08i | [MLP в Transformer](08i-token-mlp.md) | Практика завершена; формы, параметры и независимость позиций разобраны |
 | 08j | [Pre-norm Transformer-блок](08j-transformer-block.md) | Практика завершена; residual-ветви и причинность разобраны |
 | 08k | [Tiny LM: от token IDs до logits](08k-tiny-language-model.md) | Практика завершена; logits и next-token loss разобраны |
+| 08l | [Первое обучение и генерация](08l-first-training.md) | Первый запуск завершён; обучение и авторегрессионная генерация разобраны |
 | 09 | Embeddings, retrieval и reranking | Запланировано |
 | 10 | RAG evaluation | Запланировано |
 | 11 | LLM agents и детерминированные workflows | Запланировано |
