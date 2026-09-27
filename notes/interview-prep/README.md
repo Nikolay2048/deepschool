@@ -37,6 +37,7 @@
 | 08k | [Tiny LM: от token IDs до logits](08k-tiny-language-model.md) | Практика завершена; logits и next-token loss разобраны |
 | 08l | [Первое обучение и генерация](08l-first-training.md) | Первый запуск завершён; обучение и авторегрессионная генерация разобраны |
 | 08m | [Настоящий текст и checkpoint](08m-real-text-training.md) | Запуски выполнены; разобраны ограничения baseline, checkpoint и улучшенный профиль |
+| 08n | [Как читать результаты обучения](08n-reading-training-results.md) | Теория к уроку 11: оценка loss, динамика, переобучение и ограничения генерации |
 | 09 | Embeddings, retrieval и reranking | Запланировано |
 | 10 | RAG evaluation | Запланировано |
 | 11 | LLM agents и детерминированные workflows | Запланировано |
