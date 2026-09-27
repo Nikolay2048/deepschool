@@ -1,0 +1,28 @@
+{
+  "author": "Александр Сергеевич Пушкин",
+  "title": "Капитанская дочка",
+  "source_url": "https://ru.wikisource.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%D0%B4%D0%BE%D1%87%D0%BA%D0%B0_%28%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%29/1978_%28%D0%A1%D0%9E%29",
+  "revision_id": 5678873,
+  "revision_url": "https://ru.wikisource.org/w/index.php?oldid=5678873",
+  "downloaded_utc": "2026-09-26T17:40:27.057493+00:00",
+  "html_sha256": "4ec92b3f9d1ba8adfd891388d5d910e842de8101aeebbac725feadbbc8ea940b",
+  "text_sha256": "c09ca5424be6868cbdda3e5fab93ec9532c59a7770773a29e596e4f52a6e46cc",
+  "rights_note": "Wikisource labels the original work public domain in Russia and life+70 jurisdictions. Editorial appendices and notes excluded.",
+  "extraction": "Paragraphs in chapters I–XIV, including epigraphs. HTML navigation, superscript markers, post-chapter editorial material and appendix excluded. NFC, whitespace normalization; original case preserved.",
+  "chapter_characters": {
+    "I": 14191,
+    "II": 15592,
+    "III": 10164,
+    "IV": 14708,
+    "V": 12502,
+    "VI": 17024,
+    "VII": 11720,
+    "VIII": 13568,
+    "IX": 8014,
+    "X": 13004,
+    "XI": 18131,
+    "XII": 10989,
+    "XIII": 11112,
+    "XIV": 18090
+  }
+}
